@@ -12,7 +12,7 @@ A simple Progressive Web App for managing tasks offline.
 Open index.html in a browser
 
 ## Deployment
-Hosted on Vercel
+Hosted on netlify
 
 ## PWA Features
 - manifest.json
