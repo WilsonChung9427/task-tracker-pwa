@@ -1,0 +1,165 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container */
+  .container {
+    background: white;
+    padding: 30px;
+    width: 420px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  /* Title */
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Input area */
+  .input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Task input */
+  #taskInput {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Date + button */
+  .date-add {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #dateInput {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Button */
+  button {
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background: #5a67d8;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Task list */
+  ul {
+    list-style: none;
+  }
+  
+  /* Task item */
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    animation: fadeInUp 0.3s ease;
+    transition: 0.2s;
+  }
+  
+  li:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px) scale(1.02);
+  }
+  
+  /* Buttons */
+  .btn-group {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .complete-btn {
+    background: #48bb78;
+    padding: 6px 10px;
+    border-radius: 8px;
+  }
+  
+  .delete-btn {
+    background: #f56565;
+    padding: 6px 10px;
+    border-radius: 8px;
+  }
+  
+  .complete-btn:hover {
+    background: #38a169;
+  }
+  
+  .delete-btn:hover {
+    background: #e53e3e;
+  }
+  
+  /* Completed */
+  .completed span {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  /* Overdue */
+  .overdue {
+    border-left: 5px solid red;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  }
+  
+  .removing {
+    animation: fadeOut 0.3s forwards;
+  }
