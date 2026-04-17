@@ -93,5 +93,5 @@ renderTasks();
 
 // Service worker
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("javascript/sw.js");
+    navigator.serviceWorker.register("/javascript/sw.js");
 }

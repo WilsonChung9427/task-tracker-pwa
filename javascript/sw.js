@@ -1,12 +1,12 @@
 const CACHE_NAME = "task-pwa-v1";
 
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/css/style.css",
-  "/javascript/script.js",
-  "/manifest.json"
-];
+    "./",
+    "./index.html",
+    "./css/style.css",
+    "./javascript/script.js",
+    "./manifest.json"
+  ];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
